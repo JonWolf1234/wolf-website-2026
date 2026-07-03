@@ -3,6 +3,7 @@ import fsSync from 'node:fs';
 import path from 'node:path';
 import process from 'node:process';
 import { fileURLToPath } from 'node:url';
+import sharp from 'sharp';
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(scriptDir, '..');
@@ -219,7 +220,11 @@ function extensionFromContentType(contentType = '') {
 async function existingImageFilename(id) {
   try {
     const files = await fs.readdir(paths.images);
-    return files.find(file => file.startsWith(`${id}.`)) || '';
+
+    return files.find(file =>
+      file.startsWith(`${id}.`) ||
+      file.startsWith(`${id}-`)
+    ) || '';
   } catch {
     return '';
   }
@@ -517,7 +522,123 @@ async function main() {
   const publicCandidates = candidates.filter(product => product.websiteVisible);
   console.log(`Processing ${publicCandidates.length} public products from ${sourceRows.length} Current RMS rows…`);
 
-  const imageResults = await mapWithConcurrency(publicCandidates, 5, product => downloadImage(product, config));
+
+async function findLocalProductImage(productId) {
+  const imageFolder = path.join(
+    rootDir,
+    'private-import',
+    'product-images'
+  );
+
+  let files = [];
+
+  try {
+    files = await fs.readdir(imageFolder);
+  } catch (error) {
+    if (error.code === 'ENOENT') {
+      console.log(`Local image folder not found: ${imageFolder}`);
+      return null;
+    }
+
+    throw error;
+  }
+
+  const supportedExtensions = new Set([
+    '.jpg',
+    '.jpeg',
+    '.png',
+    '.webp',
+    '.avif'
+  ]);
+
+  const matchingFiles = files
+    .filter(filename => {
+      const extension = path.extname(filename).toLowerCase();
+
+      if (!supportedExtensions.has(extension)) {
+        return false;
+      }
+
+      const match = filename.match(/^(\d+)\s+/);
+
+      return match && match[1] === String(productId);
+    })
+    .sort((a, b) =>
+      a.localeCompare(b, undefined, {
+        numeric: true,
+        sensitivity: 'base'
+      })
+    );
+
+  if (!matchingFiles.length) {
+    return null;
+  }
+
+  const matchingFile = matchingFiles[0];
+
+  return {
+    filename: matchingFile,
+    fullPath: path.join(imageFolder, matchingFile)
+  };
+}
+
+async function processLocalImage(product, config) {
+  const localImage = await findLocalProductImage(product.id);
+
+  if (!localImage) {
+    return null;
+  }
+
+  await fs.mkdir(paths.images, {
+    recursive: true
+  });
+
+  const outputFilename = `${product.id}-main.webp`;
+  const outputPath = path.join(
+    paths.images,
+    outputFilename
+  );
+
+  await sharp(localImage.fullPath)
+    .rotate()
+    .resize({
+      width: config.imageMaxSize || 1400,
+      height: config.imageMaxSize || 1400,
+      fit: 'inside',
+      withoutEnlargement: true
+    })
+    .webp({
+      quality: config.imageQuality || 84
+    })
+    .toFile(outputPath);
+
+  console.log(
+    `Matched local image for product ${product.id}: ${localImage.filename}`
+  );
+
+  return {
+    filename: outputFilename,
+    status: 'Local image'
+  };
+}
+
+const imageResults = await mapWithConcurrency(
+  publicCandidates,
+  5,
+  async product => {
+    const localImageResult = await processLocalImage(
+      product,
+      config
+    );
+
+    if (localImageResult) {
+      return localImageResult;
+    }
+
+    return downloadImage(product, config);
+  }
+);
+
   const products = publicCandidates.map((candidate, index) => {
     const imageResult = imageResults[index];
     const slug = `${slugify(candidate.name)}-${candidate.id}`;
