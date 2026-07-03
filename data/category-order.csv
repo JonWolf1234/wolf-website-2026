@@ -1,0 +1,14 @@
+department,department_order,category,category_order,subcategory,subcategory_order,menu_label,active
+Rigging,30,Truss,10,290 Silver,10,290 Silver,Yes
+Rigging,30,Truss,10,290 Black,20,290 Black,Yes
+Rigging,30,Truss,10,390 Silver,30,390 Silver,Yes
+Rigging,30,Truss,10,390 LED,40,390 LED,Yes
+Rigging,30,Truss,10,Truss Accessories,50,Accessories,Yes
+Rigging,30,Truss,10,Other Truss,60,Other Truss,Yes
+Rigging,30,Motors & Hoists,20,Chain Hoists,10,Chain Hoists,Yes
+Rigging,30,Pipe & Tube,30,Silver Tube,10,Silver Tube,Yes
+Rigging,30,Pipe & Tube,30,Black Tube,20,Black Tube,Yes
+Rigging,30,Rigging Hardware,40,Steels & Slings,10,Steels & Slings,Yes
+Rigging,30,Rigging Hardware,40,Clamps & Hardware,20,Clamps & Hardware,Yes
+Rigging,30,Rigging Hardware,40,Ratchet Straps,30,Ratchet Straps,Yes
+Rigging,30,Access Equipment,50,Ladders,10,Ladders,Yes

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Product image coming soon</title>
+  <desc id="desc">Wolf Lighting product image placeholder</desc>
+  <rect width="1200" height="900" fill="#f1f2f0"/>
+  <g transform="translate(600 430)" fill="none" stroke="#14763c" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" opacity=".7">
+    <path d="M-165 65h330l-38-220h-254z"/>
+    <circle cx="-95" cy="105" r="22"/>
+    <circle cx="95" cy="105" r="22"/>
+    <path d="M-110-25h220M-85-95h170"/>
+  </g>
+  <text x="600" y="660" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700" fill="#1d2b24">PRODUCT IMAGE COMING SOON</text>
+  <rect x="470" y="700" width="260" height="8" rx="4" fill="#f28c28"/>
+</svg>

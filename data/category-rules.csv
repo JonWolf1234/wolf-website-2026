@@ -1,0 +1,13 @@
+priority,current_rms_group,name_contains,name_excludes,tags_contains,website_department,website_category,website_subcategory,enabled
+5,Rigging,Truss Pin|Truss Clip|Truss Corner|Adjustable Truss Corner|Base Plate|Spigot|Hinge,Section,,Rigging,Truss,Truss Accessories,Yes
+10,Rigging,M290,Black,,Rigging,Truss,290 Silver,Yes
+20,Rigging,M290,,,Rigging,Truss,290 Black,Yes
+30,Rigging,M390,LED|Black,,Rigging,Truss,390 Silver,Yes
+40,Rigging,M390 LED,,,Rigging,Truss,390 LED,Yes
+60,Rigging,Chain Hoist,,,Rigging,Motors & Hoists,Chain Hoists,Yes
+70,Rigging,Aluminium 48mm Tube,Black,,Rigging,Pipe & Tube,Silver Tube,Yes
+80,Rigging,Aluminium 48mm Tube,,,Rigging,Pipe & Tube,Black Tube,Yes
+90,Rigging,Wire Rope|Soft Steel|Safety Bond,,,Rigging,Rigging Hardware,Steels & Slings,Yes
+100,Rigging,Ratchet Strap,,,Rigging,Rigging Hardware,Ratchet Straps,Yes
+110,Rigging,Beam Clamp|Hook Clamp|Master Link|Shackle,,,Rigging,Rigging Hardware,Clamps & Hardware,Yes
+120,Rigging,Zarges|Ladder,,,Rigging,Access Equipment,Ladders,Yes

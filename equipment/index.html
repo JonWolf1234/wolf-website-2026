@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse Wolf Lighting equipment hire catalogue.">
+  <title>Equipment Hire | Wolf Lighting</title>
+  <link rel="stylesheet" href="./assets/catalogue.css">
+  <script src="./assets/catalogue.js" defer></script>
+</head>
+<body>
+  <div class="catalogue-shell">
+    <header class="catalogue-header">
+      <a class="catalogue-brand" href="../index.html" aria-label="Wolf Lighting home"><strong>WOLF</strong><span>LIGHTING</span></a>
+      <a class="catalogue-home-link" href="../index.html">Return to main website</a>
+    </header>
+
+    <section class="catalogue-hero">
+      <div class="catalogue-hero-inner">
+        <div class="eyebrow">191 products</div>
+        <h1>Equipment Hire</h1>
+        <p>Professional lighting, rigging, control and production equipment for events, touring and installations.</p>
+      </div>
+    </section>
+
+    <div class="catalogue-toolbar-wrap">
+      <div class="catalogue-toolbar">
+        <label class="search-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.4-3.4"></path></svg>
+          <span class="sr-only" hidden>Search equipment</span>
+          <input class="catalogue-search" data-search type="search" placeholder="Search products, brands or equipment types…" autocomplete="off">
+        </label>
+        <button class="toolbar-button" data-filter-button type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M7 12h10M10 18h4"></path></svg>
+          Filters
+        </button>
+        <select class="sort-select" data-sort aria-label="Sort products">
+          <option value="recommended">Recommended order</option>
+          <option value="name-asc">Name A–Z</option>
+          <option value="name-desc">Name Z–A</option>
+        </select>
+      </div>
+    </div>
+
+    <main class="catalogue-main">
+      <aside class="catalogue-sidebar" data-sidebar>
+        <div class="sidebar-heading"><h2>Browse equipment</h2><button class="clear-filters" data-clear-all type="button">Clear all</button></div>
+        <nav class="category-tree" data-category-tree aria-label="Equipment categories"></nav>
+      </aside>
+      <section class="catalogue-results" aria-live="polite">
+        <header class="results-head">
+          <div><p class="results-kicker">Wolf equipment catalogue</p><h2 class="results-title" data-results-title>All equipment</h2></div>
+          <div class="results-count" data-results-count></div>
+        </header>
+        <div class="active-filters" data-active-filters></div>
+        <div class="product-grid" data-product-grid></div>
+        <div class="load-more-wrap"><button class="load-more" data-load-more type="button">Load more equipment</button></div>
+      </section>
+    </main>
+
+    <footer class="catalogue-footer"><strong>Wolf Lighting</strong><br>Equipment shown is subject to availability. Contact us to discuss your production requirements.</footer>
+  </div>
+  <div class="mobile-filter-backdrop" data-filter-backdrop></div>
+</body>
+</html>

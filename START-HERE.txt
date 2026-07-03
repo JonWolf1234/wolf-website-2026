@@ -1,0 +1,12 @@
+WOLF EQUIPMENT CATALOGUE
+========================
+
+1. Read README.md.
+2. Keep your raw Current RMS export in:
+   private-import/current-products.csv
+3. Never commit that raw CSV to public GitHub.
+4. Double-click “Update Catalogue.command” to rebuild the catalogue and import fresh images.
+5. Double-click “Preview Catalogue.command” to preview it locally.
+6. Commit and push the generated equipment folder, data controls and reports.
+
+The sample build already contains 191 generated product pages for testing.

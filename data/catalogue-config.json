@@ -1,0 +1,14 @@
+{
+  "siteName": "Wolf Lighting",
+  "catalogueTitle": "Equipment Hire",
+  "catalogueIntro": "Professional lighting, rigging, control and production equipment for events, touring and installations.",
+  "contactEmail": "jon@wolf-events.com",
+  "productsPerPage": 24,
+  "fallbackDepartment": "Other Equipment",
+  "fallbackCategory": "Other Equipment",
+  "fallbackSubcategory": "Browse All",
+  "includeUnclassified": true,
+  "showPrices": false,
+  "imageMaxSize": 1200,
+  "imageQuality": 82
+}
