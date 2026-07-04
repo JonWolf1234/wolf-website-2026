@@ -1,14 +1,149 @@
 department,department_order,category,category_order,subcategory,subcategory_order,menu_label,active
+Lighting,10,Wireless & Battery Lighting,10,Astera Tubes,10,Astera Tubes,Yes
+Lighting,10,Wireless & Battery Lighting,10,Astera QuikSpot,20,Astera QuikSpot,Yes
+Lighting,10,Wireless & Battery Lighting,10,Astera NYX,30,Astera NYX,Yes
+Lighting,10,Wireless & Battery Lighting,10,Battery Uplighters,50,Battery Uplighters,Yes
+Lighting,10,LED Fixtures,20,LED Battens & Pixel Strips,10,LED Battens & Pixel Strips,Yes
+Lighting,10,LED Fixtures,20,LED Panels & Soft Lights,20,LED Panels & Soft Lights,Yes
+Lighting,10,LED Fixtures,20,Blinders & Strobes,30,Blinders & Strobes,Yes
+Lighting,10,LED Fixtures,20,LED Profiles,40,LED Profiles,Yes
+Lighting,10,LED Fixtures,20,LED Fresnels,50,LED Fresnels,Yes
+Lighting,10,LED Fixtures,20,LED Washes & Floods,60,LED Washes & Floods,Yes
+Lighting,10,LED Fixtures,20,LED Pars,70,LED Pars,Yes
+Lighting,10,LED Fixtures,20,Other LED Fixtures,80,Other LED Fixtures,Yes
+Lighting,10,Decorative Lighting,30,LED Lamps & Bulbs,10,LED Lamps & Bulbs,Yes
+Lighting,10,Decorative Lighting,30,Retro Fixtures,20,Retro Fixtures,Yes
+Lighting,10,Decorative Lighting,30,Festoon Accessories,30,Festoon Accessories,Yes
+Lighting,10,Moving Lights,40,Beam Fixtures,10,Beam Fixtures,Yes
+Lighting,10,Moving Lights,40,Wash Fixtures,20,Wash Fixtures,Yes
+Lighting,10,Moving Lights,40,Profile & Spot Fixtures,30,Profile & Spot Fixtures,Yes
+Lighting,10,Moving Lights,40,Pixel & Effect Fixtures,40,Pixel & Effect Fixtures,Yes
+Lighting,10,Moving Lights,40,Other Moving Lights,50,Other Moving Lights,Yes
+Lighting,10,Conventional Lighting,50,Blinders,10,Blinders,Yes
+Lighting,10,Conventional Lighting,50,Profiles,20,Profiles,Yes
+Lighting,10,Conventional Lighting,50,Fresnels & PCs,30,Fresnels & PCs,Yes
+Lighting,10,Conventional Lighting,50,PARs & Pinspots,40,PARs & Pinspots,Yes
+Lighting,10,Conventional Lighting,50,Floods,50,Floods,Yes
+Lighting,10,Conventional Lighting,50,Other Conventional Fixtures,60,Other Conventional Fixtures,Yes
+Lighting,10,Site & Practical Lighting,60,Festoon,10,Festoon,Yes
+Lighting,10,Site & Practical Lighting,60,Fluorescent & Work Lights,20,Fluorescent & Work Lights,Yes
+Lighting,10,Site & Practical Lighting,60,Site Floods,30,Site Floods,Yes
+Lighting,10,Site & Practical Lighting,60,Ground & Path Lights,40,Ground & Path Lights,Yes
+Lighting,10,Site & Practical Lighting,60,Other Site Lighting,50,Other Site Lighting,Yes
+Lighting,10,Outdoor & Garden Lighting,70,"Fairy, Icicle & Net Lights",10,"Fairy, Icicle & Net Lights",Yes
+Lighting,10,Outdoor & Garden Lighting,70,Outdoor Lighting Cabling,20,Outdoor Lighting Cabling,Yes
+Lighting,10,Outdoor & Garden Lighting,70,Exterior Spots,30,Exterior Spots,Yes
+Lighting,10,Outdoor & Garden Lighting,70,Ground & Path Lights,40,Ground & Path Lights,Yes
+Lighting,10,Followspot Systems,80,Tracking Systems,10,Tracking Systems,Yes
+Lighting,10,Followspot Systems,80,Cameras & Tracking,20,Cameras & Tracking,Yes
+Lighting,10,Followspot Systems,80,Control Consoles,30,Control Consoles,Yes
+Lighting,10,Followspot Systems,80,Systems & Servers,40,Systems & Servers,Yes
+Lighting,10,Lighting Accessories,90,Astera Accessories,10,Astera Accessories,Yes
+Lighting,10,Lighting Accessories,90,Lenses,20,Lenses,Yes
+Lighting,10,Lighting Accessories,90,Optical Accessories,30,Optical Accessories,Yes
+Lighting,10,Lighting Accessories,90,Charging Accessories,40,Charging Accessories,Yes
+Lighting,10,Lighting Accessories,90,Mounting Accessories,50,Mounting Accessories,Yes
+Control & Dimming,20,Lighting Control,10,Avolites Consoles & Hardware,10,Avolites Consoles & Hardware,Yes
+Control & Dimming,20,Lighting Control,10,ChamSys Consoles & Hardware,20,ChamSys Consoles & Hardware,Yes
+Control & Dimming,20,Lighting Control,10,MA Lighting Consoles & Hardware,30,MA Lighting Consoles & Hardware,Yes
+Control & Dimming,20,Lighting Control,10,ETC Consoles & Hardware,40,ETC Consoles & Hardware,Yes
+Control & Dimming,20,Lighting Control,10,Other Control Equipment,50,Other Control Equipment,Yes
+Control & Dimming,20,Computers & Displays,20,Computers & Tablets,10,Computers & Tablets,Yes
+Control & Dimming,20,Dimming,30,Dimmers,10,Dimmers,Yes
+Control & Dimming,20,Data Distribution,40,"DMX, Art-Net & Network",10,"DMX, Art-Net & Network",Yes
+Control & Dimming,20,Control Accessories,50,Interfaces & Wings,10,Interfaces & Wings,Yes
+Control & Dimming,20,Control Accessories,50,Remotes,20,Remotes,Yes
+Control & Dimming,20,Wireless Lighting Control,60,Astera Control,10,Astera Control,Yes
+Control & Dimming,20,Power Supplies,70,Power Supplies,10,Power Supplies,Yes
 Rigging,30,Truss,10,290 Silver,10,290 Silver,Yes
 Rigging,30,Truss,10,290 Black,20,290 Black,Yes
-Rigging,30,Truss,10,390 Silver,30,390 Silver,Yes
-Rigging,30,Truss,10,390 LED,40,390 LED,Yes
-Rigging,30,Truss,10,Truss Accessories,50,Accessories,Yes
-Rigging,30,Truss,10,Other Truss,60,Other Truss,Yes
-Rigging,30,Motors & Hoists,20,Chain Hoists,10,Chain Hoists,Yes
-Rigging,30,Pipe & Tube,30,Silver Tube,10,Silver Tube,Yes
-Rigging,30,Pipe & Tube,30,Black Tube,20,Black Tube,Yes
-Rigging,30,Rigging Hardware,40,Steels & Slings,10,Steels & Slings,Yes
-Rigging,30,Rigging Hardware,40,Clamps & Hardware,20,Clamps & Hardware,Yes
+Rigging,30,Truss,10,390 LED,30,390 LED,Yes
+Rigging,30,Truss,10,390 Silver,40,390 Silver,Yes
+Rigging,30,Truss,10,Corners & Junctions,70,Corners & Junctions,Yes
+Rigging,30,Truss,10,Truss Accessories,80,Truss Accessories,Yes
+Rigging,30,Truss,10,Other Truss,90,Other Truss,Yes
+Rigging,30,Motors & Hoists,20,Electric Chain Hoists,10,Electric Chain Hoists,Yes
+Rigging,30,Motors & Hoists,20,Manual Hoists,20,Manual Hoists,Yes
+Rigging,30,Pipe & Tube,30,Tube,10,Tube,Yes
+Rigging,30,Rigging Hardware,40,"Steels, Slings & Bonds",10,"Steels, Slings & Bonds",Yes
+Rigging,30,Rigging Hardware,40,Clamps & Shackles,20,Clamps & Shackles,Yes
 Rigging,30,Rigging Hardware,40,Ratchet Straps,30,Ratchet Straps,Yes
-Rigging,30,Access Equipment,50,Ladders,10,Ladders,Yes
+Rigging,30,Rigging Hardware,40,Other Rigging,40,Other Rigging,Yes
+Rigging,30,Access Equipment,50,Ladders & Steps,10,Ladders & Steps,Yes
+Rigging,30,Ground Support,60,Ground Hardware & Ballast,10,Ground Hardware & Ballast,Yes
+Power & Cabling,40,Power Cable,10,125A Three Phase,10,125A Three Phase,Yes
+Power & Cabling,40,Power Cable,10,63A Three Phase,20,63A Three Phase,Yes
+Power & Cabling,40,Power Cable,10,32A Three Phase,30,32A Three Phase,Yes
+Power & Cabling,40,Power Cable,10,32A Single Phase,40,32A Single Phase,Yes
+Power & Cabling,40,Power Cable,10,16A,50,16A,Yes
+Power & Cabling,40,Power Cable,10,13A,60,13A,Yes
+Power & Cabling,40,Power Cable,10,110V,70,110V,Yes
+Power & Cabling,40,Power Cable,10,Powerlock,80,Powerlock,Yes
+Power & Cabling,40,Power Cable,10,Extensions,90,Extensions,Yes
+Power & Cabling,40,Multicore & Looms,20,Socapex,10,Socapex,Yes
+Power & Cabling,40,Multicore & Looms,20,Multicore & Looms,20,Multicore & Looms,Yes
+Power & Cabling,40,Multicore & Looms,20,Loom Accessories,30,Loom Accessories,Yes
+Power & Cabling,40,Data Cable,30,DMX,10,DMX,Yes
+Power & Cabling,40,Data Cable,30,Ethernet,20,Ethernet,Yes
+Power & Cabling,40,Data Cable,30,RF & Coax,40,RF & Coax,Yes
+Power & Cabling,40,Fixture Power Cable,40,PowerCON & TRUE1,10,PowerCON & TRUE1,Yes
+Power & Cabling,40,Fixture Power Cable,40,IEC & Appliance Leads,20,IEC & Appliance Leads,Yes
+Power & Cabling,40,Audio Cable,50,Audio Signal & Speaker,10,Audio Signal & Speaker,Yes
+Power & Cabling,40,Adaptors & Splitters,60,Power Adaptors,10,Power Adaptors,Yes
+Power & Cabling,40,Specialist Cabling,70,Martin BBD/Sceptron,10,Martin BBD/Sceptron,Yes
+Power & Cabling,40,Specialist Cabling,70,Other Cable,20,Other Cable,Yes
+Power & Cabling,40,Power Distribution,90,125A Distribution,10,125A Distribution,Yes
+Power & Cabling,40,Power Distribution,90,63A Distribution,20,63A Distribution,Yes
+Power & Cabling,40,Power Distribution,90,32A Distribution,30,32A Distribution,Yes
+Power & Cabling,40,Power Distribution,90,16A Distribution,40,16A Distribution,Yes
+Power & Cabling,40,Power Distribution,90,Powerlock Distribution,50,Powerlock Distribution,Yes
+Power & Cabling,40,Power Distribution,90,General Distribution,70,General Distribution,Yes
+Power & Cabling,40,Power Distribution,90,Other Distribution,80,Other Distribution,Yes
+Power & Cabling,40,Connectors & Components,100,Connectors,10,Connectors,Yes
+Effects,50,Atmospherics,10,Hazers,10,Hazers,Yes
+Effects,50,Atmospherics,10,Smoke & Fog Machines,20,Smoke & Fog Machines,Yes
+Effects,50,Atmospherics,10,Fans,30,Fans,Yes
+Effects,50,Special Effects,20,Snow Machines,10,Snow Machines,Yes
+Effects,50,Special Effects,20,Bubble Machines,20,Bubble Machines,Yes
+Effects,50,Special Effects,20,UV Effects,60,UV Effects,Yes
+Effects,50,Special Effects,20,Other Effects,70,Other Effects,Yes
+Effects,50,Disco & Effect Lighting,30,Lasers,10,Lasers,Yes
+Effects,50,Disco & Effect Lighting,30,Multi Effects,20,Multi Effects,Yes
+Effects,50,Disco & Effect Lighting,30,Projection Effects,30,Projection Effects,Yes
+Automation,60,Automation Control,10,Control Consoles,10,Control Consoles,Yes
+Automation,60,Automation Control,10,Motor Controllers,20,Motor Controllers,Yes
+Automation,60,Automation Control,10,Data & Power Distribution,30,Data & Power Distribution,Yes
+Automation,60,Motion Hardware,20,Rotators,10,Rotators,Yes
+Automation,60,Motion Hardware,20,Trolleys,20,Trolleys,Yes
+Staging & Fabrics,70,Drapes & Fabrics,10,Starcloth,10,Starcloth,Yes
+Staging & Fabrics,70,Drapes & Fabrics,10,Black Drapes,20,Black Drapes,Yes
+Staging & Fabrics,70,Drapes & Fabrics,10,White Drapes,30,White Drapes,Yes
+Staging & Fabrics,70,Drape Track,20,Track & Hardware,10,Track & Hardware,Yes
+Staging & Fabrics,70,Pipe & Drape,30,Pipe & Drape,10,Pipe & Drape,Yes
+Comms & Audio,80,Two-Way Radios,10,Motorola Radios,10,Motorola Radios,Yes
+Comms & Audio,80,Digital Comms,20,Riedel PunQtum,10,Riedel PunQtum,Yes
+Comms & Audio,80,Audio,50,Speakers,10,Speakers,Yes
+Comms & Audio,80,Audio,50,Microphones,20,Microphones,Yes
+Comms & Audio,80,Audio Accessories,60,Phantom Power,10,Phantom Power,Yes
+Site Equipment,90,Furniture,10,Tables,10,Tables,Yes
+Site Equipment,90,Furniture,10,Music Stands,20,Music Stands,Yes
+Site Equipment,90,Tools,20,Hand Tools,10,Hand Tools,Yes
+Site Equipment,90,Ground Equipment,30,Ground Anchors,10,Ground Anchors,Yes
+Site Equipment,90,Site Facilities,40,Refrigeration,10,Refrigeration,Yes
+Site Equipment,90,Branding & Dressing,50,Mats,10,Mats,Yes
+Site Equipment,90,Miscellaneous,60,Other Site Equipment,10,Other Site Equipment,Yes
+Cases & Protection,100,Rack Cases,10,Rack Cases,10,Rack Cases,Yes
+Cases & Protection,100,Dollies & Trolleys,20,Dollies & Trolleys,10,Dollies & Trolleys,Yes
+Cases & Protection,100,Equipment Cases,40,Flightcases,10,Flightcases,Yes
+Cases & Protection,100,Equipment Cases,40,Other Cases,20,Other Cases,Yes
+Accessories,110,General Accessories,10,Other Accessories,10,Other Accessories,Yes
+Consumables,120,Tape,10,Tape,10,Tape,Yes
+Consumables,120,Batteries,20,Batteries,10,Batteries,Yes
+Consumables,120,Lamps,30,Replacement Lamps,10,Replacement Lamps,Yes
+Consumables,120,Effects Fluids,40,Effects Fluids,10,Effects Fluids,Yes
+Consumables,120,Fixings & Fasteners,50,Cable Ties & Velcro,10,Cable Ties & Velcro,Yes
+Consumables,120,Rope & Cord,60,Rope & Cord,10,Rope & Cord,Yes
+Consumables,120,Other Consumables,90,Other Consumables,10,Other Consumables,Yes
+Services,130,Crew & Services,10,Project Management,10,Project Management,Yes
+Services,130,Crew & Services,10,Lighting Crew,20,Lighting Crew,Yes
+Services,130,Crew & Services,10,Site Crew,30,Site Crew,Yes

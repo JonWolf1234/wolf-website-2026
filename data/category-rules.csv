@@ -1,13 +1,175 @@
 priority,current_rms_group,name_contains,name_excludes,tags_contains,website_department,website_category,website_subcategory,enabled
-5,Rigging,Truss Pin|Truss Clip|Truss Corner|Adjustable Truss Corner|Base Plate|Spigot|Hinge,Section,,Rigging,Truss,Truss Accessories,Yes
 10,Rigging,M290,Black,,Rigging,Truss,290 Silver,Yes
-20,Rigging,M290,,,Rigging,Truss,290 Black,Yes
-30,Rigging,M390,LED|Black,,Rigging,Truss,390 Silver,Yes
-40,Rigging,M390 LED,,,Rigging,Truss,390 LED,Yes
-60,Rigging,Chain Hoist,,,Rigging,Motors & Hoists,Chain Hoists,Yes
-70,Rigging,Aluminium 48mm Tube,Black,,Rigging,Pipe & Tube,Silver Tube,Yes
-80,Rigging,Aluminium 48mm Tube,,,Rigging,Pipe & Tube,Black Tube,Yes
-90,Rigging,Wire Rope|Soft Steel|Safety Bond,,,Rigging,Rigging Hardware,Steels & Slings,Yes
-100,Rigging,Ratchet Strap,,,Rigging,Rigging Hardware,Ratchet Straps,Yes
-110,Rigging,Beam Clamp|Hook Clamp|Master Link|Shackle,,,Rigging,Rigging Hardware,Clamps & Hardware,Yes
-120,Rigging,Zarges|Ladder,,,Rigging,Access Equipment,Ladders,Yes
+20,Rigging,M290 Black|M290V Quatro Truss (Black)|M290 Quatro Truss (Black),,,Rigging,Truss,290 Black,Yes
+30,Rigging,M390 LED,,,Rigging,Truss,390 LED,Yes
+40,Rigging,M390,LED|Black,,Rigging,Truss,390 Silver,Yes
+50,Rigging,M390 Black|M390V Quatro Truss (Black),,,Rigging,Truss,390 Black,Yes
+60,Rigging,Circle Truss|Circle Dolly,,,Rigging,Truss,Circle Truss,Yes
+70,Rigging,Corner|Junction|T Piece|T-Piece|Book Corner|Universal Junction,,truss,Rigging,Truss,Corners & Junctions,Yes
+80,Rigging,Truss Pin|Truss Clip|Spigot|Egg|Hinge|Base Plate|Baseplate|Truss Tool|Truss Dolly,,,Rigging,Truss,Truss Accessories,Yes
+90,Rigging,Truss,,,Rigging,Truss,Other Truss,Yes
+100,Rigging,Chain Hoist|Loadstar|Prostar|Lodestar|Motor,,,Rigging,Motors & Hoists,Electric Chain Hoists,Yes
+110,Rigging,Hand Chain Hoist|Manual Chain Hoist|Lever Hoist|Chain Block,,,Rigging,Motors & Hoists,Manual Hoists,Yes
+120,Rigging,Motor Controller|Hoist Controller|Pickle|Pendant,,,Rigging,Motors & Hoists,Motor Control,Yes
+130,Rigging,Aluminium 48mm Tube|Scaffold Tube|Scaff Tube,,,Rigging,Pipe & Tube,Tube,Yes
+140,Rigging,Wire Rope|Steel Wire|Soft Steel|Safety Bond|Round Sling|Roundsling|Web Sling,,,Rigging,Rigging Hardware,"Steels, Slings & Bonds",Yes
+150,Rigging,Shackle|Master Link|Beam Clamp|Hook Clamp|Half Coupler|Coupler|G Clamp|C Clamp|Doughty Clamp|Trigger Clamp|Swivel Clamp,,,Rigging,Rigging Hardware,Clamps & Shackles,Yes
+160,Rigging,Ratchet Strap|Span Set|Spanset,,,Rigging,Rigging Hardware,Ratchet Straps,Yes
+170,Rigging,Zarges|Ladder|Steps|Podium Step,,,Rigging,Access Equipment,Ladders & Steps,Yes
+180,Rigging,Ground Anchor|Base Jack|Tredder|Ballast|Weight,,,Rigging,Ground Support,Ground Hardware & Ballast,Yes
+190,Rigging,,,,Rigging,Rigging Hardware,Other Rigging,Yes
+200,Cable,125A,,,Power & Cabling,Power Cable,125A Three Phase,Yes
+210,Cable,63A,,,Power & Cabling,Power Cable,63A Three Phase,Yes
+220,Cable,32A 3ph|32A Three Phase|32A 3 Phase,,,Power & Cabling,Power Cable,32A Three Phase,Yes
+230,Cable,32A,,,Power & Cabling,Power Cable,32A Single Phase,Yes
+240,Cable,16A,,,Power & Cabling,Power Cable,16A,Yes
+250,Cable,13A,,,Power & Cabling,Power Cable,13A,Yes
+260,Cable,110V,,,Power & Cabling,Power Cable,110V,Yes
+270,Cable,Powerlock|Power Lock,,,Power & Cabling,Power Cable,Powerlock,Yes
+280,Cable,Socapex|Soca,,,Power & Cabling,Multicore & Looms,Socapex,Yes
+290,Cable,Multicore|Loom|Snake,,,Power & Cabling,Multicore & Looms,Multicore & Looms,Yes
+300,Cable,DMX|XLR5|5 Pin DMX|3 Pin DMX,,,Power & Cabling,Data Cable,DMX,Yes
+310,Cable,Cat5|Cat6|Ethercon|Network|RJ45,,,Power & Cabling,Data Cable,Ethernet,Yes
+320,Cable,Fibre|Fiber|Opticalcon|Optical,,,Power & Cabling,Data Cable,Fibre,Yes
+330,Cable,RF Cable|BNC|Coax,,,Power & Cabling,Data Cable,RF & Coax,Yes
+340,Cable,True1|True 1|Powercon|Power Con,,,Power & Cabling,Fixture Power Cable,PowerCON & TRUE1,Yes
+350,Cable,IEC|Fig 8|Cloverleaf,,,Power & Cabling,Fixture Power Cable,IEC & Appliance Leads,Yes
+360,Cable,Jack|XLR|Speakon|Audio Cable,,,Power & Cabling,Audio Cable,Audio Signal & Speaker,Yes
+370,Cable,Adapter|Adaptor|Step Up|Step Down|Splitter|Y Split,,,Power & Cabling,Adaptors & Splitters,Power Adaptors,Yes
+380,Cable,Extension Reel|Extension,,,Power & Cabling,Power Cable,Extensions,Yes
+390,Cable,Power + Data Cable BBD,,,Power & Cabling,Specialist Cabling,Martin BBD/Sceptron,Yes
+400,Cable,,sceptron|bbu,,Power & Cabling,Specialist Cabling,Other Cable,Yes
+410,Cable,,,,Power & Cabling,Other Cable,Other Cable,Yes
+420,Power Distribution Hardware,125A,,,Power & Cabling,Power Distribution,125A Distribution,Yes
+430,Power Distribution Hardware,63A,,,Power & Cabling,Power Distribution,63A Distribution,Yes
+440,Power Distribution Hardware,32A,,,Power & Cabling,Power Distribution,32A Distribution,Yes
+450,Power Distribution Hardware,16A,,,Power & Cabling,Power Distribution,16A Distribution,Yes
+460,Power Distribution Hardware,Powerlock|Power Lock,,,Power & Cabling,Power Distribution,Powerlock Distribution,Yes
+470,Power Distribution Hardware,Transformer|110V,,,Power & Cabling,Power Distribution,Transformers,Yes
+480,Power Distribution Hardware,Distro|Distribution|Consumer Unit|RCD,,,Power & Cabling,Power Distribution,General Distribution,Yes
+490,Power Distribution Hardware,,,,Power & Cabling,Power Distribution,Other Distribution,Yes
+500,LED,Astera Titan|Astera AX1,,,Lighting,Wireless & Battery Lighting,Astera Tubes,Yes
+510,LED,Astera QuikSpot|Quik Spot,,,Lighting,Wireless & Battery Lighting,Astera QuikSpot,Yes
+520,LED,Astera NYX,,,Lighting,Wireless & Battery Lighting,Astera NYX,Yes
+530,LED,Astera,,,Lighting,Wireless & Battery Lighting,Other Astera,Yes
+540,LED,Freedom Par|Battery|Wireless,,,Lighting,Wireless & Battery Lighting,Battery Uplighters,Yes
+550,LED,Batten|Bar 20|Pixel Line|Pixel Tube|ColorRail|EPIX Strip|ÉPIX Strip,,,Lighting,LED Fixtures,LED Battens & Pixel Strips,Yes
+560,LED,Panel|KL Panel|Q40,,,Lighting,LED Fixtures,LED Panels & Soft Lights,Yes
+570,LED,Blinder|Mole|Strike M|Strobe,,,Lighting,LED Fixtures,Blinders & Strobes,Yes
+580,LED,Profile|Ovation E|Ellipsoidal,,,Lighting,LED Fixtures,LED Profiles,Yes
+590,LED,Fresnel,,,Lighting,LED Fixtures,LED Fresnels,Yes
+600,LED,Wash|W300|W600|COLORado|Colorado,,,Lighting,LED Fixtures,LED Washes & Floods,Yes
+610,LED,Par|PAR|Q-SPOT|Q Spot|Studiocob|DisplayCob,,,Lighting,LED Fixtures,LED Pars,Yes
+620,LED,Lamp|Bulb|Filament|Golf Ball,,,Lighting,Decorative Lighting,LED Lamps & Bulbs,Yes
+630,LED,,,,Lighting,LED Fixtures,Other LED Fixtures,Yes
+640,Automated Lighting,Beam,,,Lighting,Moving Lights,Beam Fixtures,Yes
+650,Automated Lighting,Wash,,,Lighting,Moving Lights,Wash Fixtures,Yes
+660,Automated Lighting,Profile|Spot|Diablo|Pointe|Esprite|BMFL|Maverick|Mac,,,Lighting,Moving Lights,Profile & Spot Fixtures,Yes
+670,Automated Lighting,Pixel|Bar,,,Lighting,Moving Lights,Pixel & Effect Fixtures,Yes
+680,Automated Lighting,,,,Lighting,Moving Lights,Other Moving Lights,Yes
+690,Generic Lighting,Mole|Blinder|DWE,,,Lighting,Conventional Lighting,Blinders,Yes
+700,Generic Lighting,Profile|Source Four|Source 4,,,Lighting,Conventional Lighting,Profiles,Yes
+710,Generic Lighting,Fresnel|Fresne|PC,,,Lighting,Conventional Lighting,Fresnels & PCs,Yes
+720,Generic Lighting,Par 64|PAR64|Par64|Par 16|Birdie|Pinspot,,,Lighting,Conventional Lighting,PARs & Pinspots,Yes
+730,Generic Lighting,Flood,,,Lighting,Conventional Lighting,Floods,Yes
+740,Generic Lighting,Portman|PATT|Retro,,,Lighting,Decorative Lighting,Retro Fixtures,Yes
+750,Generic Lighting,,,,Lighting,Conventional Lighting,Other Conventional Fixtures,Yes
+760,Site Lighting,Festoon,,,Lighting,Site & Practical Lighting,Festoon,Yes
+770,Site Lighting,Fluorescent|Tube,,,Lighting,Site & Practical Lighting,Fluorescent & Work Lights,Yes
+780,Site Lighting,HQI|Flood,,,Lighting,Site & Practical Lighting,Site Floods,Yes
+790,Site Lighting,Ground Spike|Path,,,Lighting,Site & Practical Lighting,Ground & Path Lights,Yes
+800,Site Lighting,,,,Lighting,Site & Practical Lighting,Other Site Lighting,Yes
+810,Outdoor & Garden Lighting,Fairy|Pea Light|Icicle|Net Light,,,Lighting,Outdoor & Garden Lighting,"Fairy, Icicle & Net Lights",Yes
+820,Outdoor & Garden Lighting,Power Cable|Extension Lead|Harness|Splitter,,,Lighting,Outdoor & Garden Lighting,Outdoor Lighting Cabling,Yes
+830,Outdoor & Garden Lighting,Aspect Exterior,,,Lighting,Outdoor & Garden Lighting,Exterior Spots,Yes
+840,Outdoor & Garden Lighting,Ground Spike,,,Lighting,Outdoor & Garden Lighting,Ground & Path Lights,Yes
+850,Outdoor & Garden Lighting,,,,Lighting,Outdoor & Garden Lighting,Other Outdoor Lighting,Yes
+860,Followspots,Track-IT|Track-iT,,,Lighting,Followspot Systems,Tracking Systems,Yes
+870,Followspots,Camera,,,Lighting,Followspot Systems,Cameras & Tracking,Yes
+880,Followspots,Console|Fader|Mouse,,,Lighting,Followspot Systems,Control Consoles,Yes
+890,Followspots,Server|System|Licence,,,Lighting,Followspot Systems,Systems & Servers,Yes
+900,Followspots,,,,Lighting,Followspot Systems,Followspot Accessories,Yes
+910,Control & Dimming,Avolites,,,Control & Dimming,Lighting Control,Avolites Consoles & Hardware,Yes
+920,Control & Dimming,Chamsys|ChamSys,,,Control & Dimming,Lighting Control,ChamSys Consoles & Hardware,Yes
+930,Control & Dimming,grandMA|MA Lighting|MA2|MA3,,,Control & Dimming,Lighting Control,MA Lighting Consoles & Hardware,Yes
+940,Control & Dimming,ETC|EOS|Ion|Gio,,,Control & Dimming,Lighting Control,ETC Consoles & Hardware,Yes
+950,Control & Dimming,Acer|Dell|ASUS|Laptop|PC|Computer|Monitor|Tablet,,,Control & Dimming,Computers & Displays,Computers & Tablets,Yes
+960,Control & Dimming,Dimmer|Art 2000|Celco,,,Control & Dimming,Dimming,Dimmers,Yes
+970,Control & Dimming,DMX Buffer|Splitter|Node|Gateway|Snakesys|TitanNet|Network Switch|Optical,,,Control & Dimming,Data Distribution,"DMX, Art-Net & Network",Yes
+980,Control & Dimming,Dongle|Interface|Wing,,,Control & Dimming,Control Accessories,Interfaces & Wings,Yes
+990,Control & Dimming,AsteraBox|PowerStation|PrepBox,,,Control & Dimming,Wireless Lighting Control,Astera Control,Yes
+1000,Control & Dimming,Remote,,,Control & Dimming,Control Accessories,Remotes,Yes
+1010,Control & Dimming,,,,Control & Dimming,Lighting Control,Other Control Equipment,Yes
+1020,Effects & Atmospherics,Hazer|Haze,,,Effects,Atmospherics,Hazers,Yes
+1030,Effects & Atmospherics,Smoke|Fog,,,Effects,Atmospherics,Smoke & Fog Machines,Yes
+1040,Effects & Atmospherics,Fan,,,Effects,Atmospherics,Fans,Yes
+1050,Effects & Atmospherics,Snow,,,Effects,Special Effects,Snow Machines,Yes
+1060,Effects & Atmospherics,Bubble,,,Effects,Special Effects,Bubble Machines,Yes
+1070,Effects & Atmospherics,Confetti|Streamer,,,Effects,Special Effects,Confetti & Streamers,Yes
+1080,Effects & Atmospherics,Cold Spark|Sparkular|Spark,,,Effects,Special Effects,Cold Spark Machines,Yes
+1090,Effects & Atmospherics,Flame|Fire,,,Effects,Special Effects,Flame Effects,Yes
+1100,Effects & Atmospherics,UV|Blacklight,,,Effects,Special Effects,UV Effects,Yes
+1110,Effects & Atmospherics,,,,Effects,Special Effects,Other Effects,Yes
+1120,Disco & Sound to light effects,Laser,,,Effects,Disco & Effect Lighting,Lasers,Yes
+1130,Disco & Sound to light effects,Kinta|Derby|Multi Effect,,,Effects,Disco & Effect Lighting,Multi Effects,Yes
+1140,Disco & Sound to light effects,Solar 250,,,Effects,Disco & Effect Lighting,Projection Effects,Yes
+1150,Disco & Sound to light effects,,,,Effects,Disco & Effect Lighting,Other Disco Effects,Yes
+1160,Accessories,Astera,,,Lighting,Lighting Accessories,Astera Accessories,Yes
+1170,Accessories,Lens|Ellipsoidal Lens|Source Four Lens,,,Lighting,Lighting Accessories,Lenses,Yes
+1180,Accessories,Barndoor|Gel Frame|Gobo Holder,,,Lighting,Lighting Accessories,Optical Accessories,Yes
+1190,Accessories,Festoon Pendant|Lamp Holder,,,Lighting,Decorative Lighting,Festoon Accessories,Yes
+1200,Accessories,PSU|Power Supply,,,Control & Dimming,Power Supplies,Power Supplies,Yes
+1210,Accessories,Charging|Charger|Charge Plate,,,Lighting,Lighting Accessories,Charging Accessories,Yes
+1220,Accessories,Yoke|Bracket|Holder|Stand|BabyPin|Spigot,,,Lighting,Lighting Accessories,Mounting Accessories,Yes
+1230,Accessories,Folding Table,,,Site Equipment,Furniture,Tables,Yes
+1240,Accessories,IP66 Connector|3 pin F|3 pin M|Connector,,,Power & Cabling,Connectors & Components,Connectors,Yes
+1250,Accessories,Feeder Loom|Socapex Ext|Cat5E Feeder,,,Power & Cabling,Multicore & Looms,Loom Accessories,Yes
+1260,Accessories,,,,Accessories,General Accessories,Other Accessories,Yes
+1270,Flightcases & Protection,Rack Case|U Rack|Briefcase,,,Cases & Protection,Rack Cases,Rack Cases,Yes
+1280,Flightcases & Protection,Dolly|Trolley|Cart,,,Cases & Protection,Dollies & Trolleys,Dollies & Trolleys,Yes
+1290,Flightcases & Protection,Bag|Cover|Sleeve,,,Cases & Protection,Bags & Covers,Bags & Covers,Yes
+1300,Flightcases & Protection,Flightcase|Flight Case|Case|Box,,,Cases & Protection,Equipment Cases,Flightcases,Yes
+1310,Flightcases & Protection,,,,Cases & Protection,Equipment Cases,Other Cases,Yes
+1320,Consumables,Tape,,,Consumables,Tape,Tape,Yes
+1330,Consumables,Battery|Batteries,,,Consumables,Batteries,Batteries,Yes
+1340,Consumables,Lamp|Bulb,,,Consumables,Lamps,Replacement Lamps,Yes
+1350,Consumables,Fluid|Haze Fluid|Smoke Fluid|Fog Fluid|Snow Fluid|Bubble Fluid,,,Consumables,Effects Fluids,Effects Fluids,Yes
+1360,Consumables,Cable Tie|Tie Wrap|Velcro,,,Consumables,Fixings & Fasteners,Cable Ties & Velcro,Yes
+1370,Consumables,Paracord|Rope|Cord,,,Consumables,Rope & Cord,Rope & Cord,Yes
+1380,Consumables,Barrier Tape,,,Consumables,Safety & Marking,Barrier & Marking Tape,Yes
+1390,Consumables,Gel|Filter,,,Consumables,Lighting Consumables,Gel & Filters,Yes
+1400,Consumables,,,,Consumables,Other Consumables,Other Consumables,Yes
+1410,Drapes & Fabrics,Starcloth|Star Cloth,,,Staging & Fabrics,Drapes & Fabrics,Starcloth,Yes
+1420,Drapes & Fabrics,Black Drape,,,Staging & Fabrics,Drapes & Fabrics,Black Drapes,Yes
+1430,Drapes & Fabrics,White Drape,,,Staging & Fabrics,Drapes & Fabrics,White Drapes,Yes
+1440,Drapes & Fabrics,Six Track|Track|Pulley|Runner|End Stop,,,Staging & Fabrics,Drape Track,Track & Hardware,Yes
+1450,Drapes & Fabrics,Pipe & Drape|Pipe and Drape,,,Staging & Fabrics,Pipe & Drape,Pipe & Drape,Yes
+1460,Drapes & Fabrics,,,,Staging & Fabrics,Drapes & Fabrics,Other Drapes & Fabrics,Yes
+1470,Comms Systems,Motorola XT420|Motorola,,,Comms & Audio,Two-Way Radios,Motorola Radios,Yes
+1480,Comms Systems,RIEDEL|PUNQTUM|PunQtum,,,Comms & Audio,Digital Comms,Riedel PunQtum,Yes
+1490,Comms Systems,Headset,,,Comms & Audio,Comms Accessories,Headsets,Yes
+1500,Comms Systems,Charger|Battery|Holster|Fist Mic,,,Comms & Audio,Comms Accessories,Radio Accessories,Yes
+1510,Comms Systems,,,,Comms & Audio,Communications,Other Comms,Yes
+1520,Audio,Speaker,,,Comms & Audio,Audio,Speakers,Yes
+1530,Audio,Microphone|SM58|Boundary,,,Comms & Audio,Audio,Microphones,Yes
+1540,Audio,Phantom Power,,,Comms & Audio,Audio Accessories,Phantom Power,Yes
+1550,Audio,Clip,,,Comms & Audio,Audio Accessories,Microphone Accessories,Yes
+1560,Audio,,,,Comms & Audio,Audio,Other Audio,Yes
+1570,Automation,Console|Vector,,,Automation,Automation Control,Control Consoles,Yes
+1580,Automation,Elevation,,,Automation,Automation Control,Motor Controllers,Yes
+1590,Automation,Array|Distribution|PD-ES,,,Automation,Automation Control,Data & Power Distribution,Yes
+1600,Automation,Rotator,,,Automation,Motion Hardware,Rotators,Yes
+1610,Automation,Trolley,,,Automation,Motion Hardware,Trolleys,Yes
+1620,Automation,,,,Automation,Automation,Other Automation,Yes
+1630,Misc Items,Podger|Spanner|Allen Key|Tool,,,Site Equipment,Tools,Hand Tools,Yes
+1640,Misc Items,Ground Anchor|Insertion Tool,,,Site Equipment,Ground Equipment,Ground Anchors,Yes
+1650,Misc Items,Fridge|Freezer|Chiller|Coolbox,,,Site Equipment,Site Facilities,Refrigeration,Yes
+1660,Misc Items,Music Stand,,,Site Equipment,Furniture,Music Stands,Yes
+1670,Misc Items,Mat|Rug,,,Site Equipment,Branding & Dressing,Mats,Yes
+1680,Misc Items,Barndoor|Gel Frame|Gobo Holder,,,Lighting,Lighting Accessories,Optical Accessories,Yes
+1690,Misc Items,PSU,,,Control & Dimming,Power Supplies,Power Supplies,Yes
+1700,Misc Items,,,,Site Equipment,Miscellaneous,Other Site Equipment,Yes
+1710,Staff,Project Manager|Crew Boss,,,Services,Crew & Services,Project Management,Yes
+1720,Staff,Lighting Engineer,,,Services,Crew & Services,Lighting Crew,Yes
+1730,Staff,Site Crew,,,Services,Crew & Services,Site Crew,Yes
+1740,Staff,,,,Services,Crew & Services,Other Crew,Yes
