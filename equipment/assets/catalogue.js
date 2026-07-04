@@ -125,31 +125,97 @@
   }
 
   function renderTree() {
-    const html = state.hierarchy.map(department => {
-      const isOpen = !state.department || state.department === department.name;
-      const categories = department.categories.map(category => {
-        const categoryActive = state.category === category.name && state.department === department.name;
-        const subcategories = category.subcategories.map(sub => {
-          const active = state.department === department.name && state.category === category.name && state.subcategory === sub.name;
-          return `<button class="subcategory-button ${active ? 'is-active' : ''}" data-department="${esc(department.name)}" data-category="${esc(category.name)}" data-subcategory="${esc(sub.name)}"><span>${esc(sub.label || sub.name)}</span><small>${sub.count}</small></button>`;
-        }).join('');
+  const html = state.hierarchy.map(department => {
+    const departmentOpen =
+      state.department === department.name;
+
+    const categories = department.categories.map(category => {
+      const categoryOpen =
+        state.department === department.name &&
+        state.category === category.name;
+
+      const subcategories = category.subcategories.map(sub => {
+        const active =
+          state.department === department.name &&
+          state.category === category.name &&
+          state.subcategory === sub.name;
+
         return `
-          <div class="category-branch">
-            <button class="category-button ${categoryActive ? 'is-active' : ''}" data-department="${esc(department.name)}" data-category="${esc(category.name)}"><span>${esc(category.name)}</span><small>${category.count}</small></button>
-            <div class="subcategory-list">${subcategories}</div>
-          </div>`;
+          <button
+            class="subcategory-button ${active ? 'is-active' : ''}"
+            data-department="${esc(department.name)}"
+            data-category="${esc(category.name)}"
+            data-subcategory="${esc(sub.name)}"
+            type="button"
+          >
+            <span>${esc(sub.label || sub.name)}</span>
+            <small>${sub.count}</small>
+          </button>`;
       }).join('');
+
       return `
-        <section class="department-group ${isOpen ? 'is-open' : ''}">
-          <button class="department-toggle" data-department-toggle="${esc(department.name)}"><span>${esc(department.name)}</span><span>${department.count}</span></button>
-          <div class="category-list">
-            <button class="category-button ${state.department === department.name && !state.category ? 'is-active' : ''}" data-department="${esc(department.name)}"><span>View all</span><small>${department.count}</small></button>
-            ${categories}
+        <div class="category-branch ${categoryOpen ? 'is-open' : ''}">
+          <button
+            class="category-toggle ${categoryOpen ? 'is-active' : ''}"
+            data-category-toggle
+            type="button"
+            aria-expanded="${categoryOpen ? 'true' : 'false'}"
+          >
+            <span>${esc(category.name)}</span>
+            <span class="category-toggle-right">
+              <small>${category.count}</small>
+              <span class="category-toggle-icon" aria-hidden="true">+</span>
+            </span>
+          </button>
+
+          <div class="subcategory-list">
+            <button
+              class="subcategory-button ${categoryOpen && !state.subcategory ? 'is-active' : ''}"
+              data-department="${esc(department.name)}"
+              data-category="${esc(category.name)}"
+              type="button"
+            >
+              <span>View all</span>
+              <small>${category.count}</small>
+            </button>
+
+            ${subcategories}
           </div>
-        </section>`;
+        </div>`;
     }).join('');
-    els.tree.innerHTML = html;
-  }
+
+    return `
+      <section class="department-group ${departmentOpen ? 'is-open' : ''}">
+        <button
+          class="department-toggle"
+          data-department-toggle="${esc(department.name)}"
+          type="button"
+          aria-expanded="${departmentOpen ? 'true' : 'false'}"
+        >
+          <span>${esc(department.name)}</span>
+          <span class="department-toggle-right">
+            <small>${department.count}</small>
+            <span class="department-toggle-icon" aria-hidden="true">+</span>
+          </span>
+        </button>
+
+        <div class="category-list">
+          <button
+            class="category-button ${state.department === department.name && !state.category ? 'is-active' : ''}"
+            data-department="${esc(department.name)}"
+            type="button"
+          >
+            <span>View all</span>
+            <small>${department.count}</small>
+          </button>
+
+          ${categories}
+        </div>
+      </section>`;
+  }).join('');
+
+  els.tree.innerHTML = html;
+}
 
   function render() {
     els.title.textContent = currentTitle();
@@ -219,20 +285,59 @@
       state.subcategory = '';
       applyFilters();
     });
-    els.tree.addEventListener('click', event => {
-      const toggle = event.target.closest('[data-department-toggle]');
-      if (toggle) {
-        toggle.closest('.department-group').classList.toggle('is-open');
-        return;
-      }
-      const button = event.target.closest('[data-department]');
-      if (!button) return;
-      setCategory({
-        department: button.dataset.department || '',
-        category: button.dataset.category || '',
-        subcategory: button.dataset.subcategory || ''
-      });
-    });
+
+
+els.tree.addEventListener('click', event => {
+  const departmentToggle = event.target.closest(
+    '[data-department-toggle]'
+  );
+
+  if (departmentToggle) {
+    const departmentGroup = departmentToggle.closest(
+      '.department-group'
+    );
+
+    const isOpen = departmentGroup.classList.toggle('is-open');
+
+    departmentToggle.setAttribute(
+      'aria-expanded',
+      String(isOpen)
+    );
+
+    return;
+  }
+
+  const categoryToggle = event.target.closest(
+    '[data-category-toggle]'
+  );
+
+  if (categoryToggle) {
+    const categoryBranch = categoryToggle.closest(
+      '.category-branch'
+    );
+
+    const isOpen = categoryBranch.classList.toggle('is-open');
+
+    categoryToggle.setAttribute(
+      'aria-expanded',
+      String(isOpen)
+    );
+
+    return;
+  }
+
+  const button = event.target.closest('[data-department]');
+
+  if (!button) return;
+
+  setCategory({
+    department: button.dataset.department || '',
+    category: button.dataset.category || '',
+    subcategory: button.dataset.subcategory || ''
+  });
+});
+
+
     els.chips.addEventListener('click', event => {
       const chip = event.target.closest('[data-clear]');
       if (chip) clearFilter(chip.dataset.clear);

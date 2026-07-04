@@ -386,3 +386,166 @@ button { cursor: pointer; }
   .product-detail-image { min-height: 320px; }
   .product-facts { grid-template-columns: 1fr; }
 }
+
+/* ==================================================
+   COLLAPSIBLE EQUIPMENT MENU
+   ================================================== */
+
+.department-group,
+.category-branch {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.department-toggle,
+.category-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.department-toggle {
+  padding: 16px 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.category-toggle {
+  padding: 12px 0 12px 14px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.department-toggle-right,
+.category-toggle-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.department-toggle small,
+.category-toggle small {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.department-toggle-icon,
+.category-toggle-icon {
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 22px;
+  border-radius: 50%;
+  background: rgba(255, 79, 184, 0.12);
+  color: #ff4fb8;
+  font-size: 18px;
+  line-height: 1;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+/* Hide collapsed content */
+
+.department-group > .category-list,
+.category-branch > .subcategory-list {
+  display: none;
+}
+
+/* Show open content */
+
+.department-group.is-open > .category-list,
+.category-branch.is-open > .subcategory-list {
+  display: block;
+}
+
+/* Turn plus into a cross when open */
+
+.department-group.is-open
+  > .department-toggle
+  .department-toggle-icon,
+.category-branch.is-open
+  > .category-toggle
+  .category-toggle-icon {
+  transform: rotate(45deg);
+  background: #ff4fb8;
+  color: #ffffff;
+}
+
+/* Existing category and subcategory buttons */
+
+.category-list {
+  padding-bottom: 10px;
+}
+
+.subcategory-list {
+  padding: 0 0 10px 14px;
+}
+
+.category-button,
+.subcategory-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border: 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.72);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.category-button {
+  padding: 10px 12px 10px 14px;
+  font-size: 13px;
+}
+
+.subcategory-button {
+  padding: 9px 12px 9px 18px;
+  font-size: 13px;
+}
+
+.category-button small,
+.subcategory-button small {
+  color: rgba(255, 255, 255, 0.38);
+  font-size: 11px;
+}
+
+.category-button:hover,
+.subcategory-button:hover,
+.category-button.is-active,
+.subcategory-button.is-active,
+.category-toggle:hover {
+  background: rgba(255, 79, 184, 0.12);
+  color: #ff71c5;
+}
+
+/* Mobile spacing */
+
+@media (max-width: 900px) {
+  .department-toggle {
+    padding: 15px 0;
+  }
+
+  .category-toggle {
+    padding-left: 8px;
+  }
+
+  .subcategory-list {
+    padding-left: 8px;
+  }
+}
