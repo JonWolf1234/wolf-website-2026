@@ -227,7 +227,7 @@ button { cursor: pointer; }
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: clamp(16px, 2.4vw, 30px);
 }
 .product-card {
