@@ -447,7 +447,7 @@ button { cursor: pointer; }
   flex: 0 0 22px;
   border-radius: 50%;
   background: rgba(255, 79, 184, 0.12);
-  color: #ff4fb8;
+  color: var(--wolf-green);
   font-size: 18px;
   line-height: 1;
   transition:
@@ -479,8 +479,8 @@ button { cursor: pointer; }
   > .category-toggle
   .category-toggle-icon {
   transform: rotate(45deg);
-  background: #ff4fb8;
-  color: #ffffff;
+  background: var(--wolf-dark);
+  color: var(--wolf-orange);
 }
 
 /* Existing category and subcategory buttons */
@@ -502,7 +502,7 @@ button { cursor: pointer; }
   gap: 12px;
   border: 0;
   background: transparent;
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--wolf-green, 0.85);
   font: inherit;
   text-align: left;
   cursor: pointer;
@@ -531,7 +531,7 @@ button { cursor: pointer; }
 .subcategory-button.is-active,
 .category-toggle:hover {
   background: rgba(255, 79, 184, 0.12);
-  color: #ff71c5;
+  color: var(--wolf-dark);
 }
 
 /* Mobile spacing */
